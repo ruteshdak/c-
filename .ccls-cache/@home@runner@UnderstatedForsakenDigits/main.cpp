@@ -1,19 +1,18 @@
+
 #include <iostream>
 using namespace std;
-int main() {
-  int i, largest, n;
-  int num[50];
-  cout << "Enter no of elements";
-  cin >> n;
 
-  for (int i = 0; i < n; i++) {
-    cin >> num[i];
+int main() {
+	int arr[10],count=0;
+	for(int i=0;i<4;i++)
+	{
+	    cin>>arr[i];
+	}
+  	for(int i=0;i<4;i++)
+	{
+	    if(arr[i]>=10) 
+	    count++;
+	}
+	cout<<count<<endl;
+  return 0;
   }
-  largest = num[0];
-  for (int i = 1; i < n; i++) {
-    if (largest < num[i]) {
-      largest = num[i];
-    }
-  }
-  cout << largest;
-}

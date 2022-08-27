@@ -172,3 +172,482 @@
 
 //     cout<<"Thanks"<<endl;
 // }
+// // // // #include <iostream>
+// // // // using namespace std;
+// // // // struct student {
+// // // //   string name;
+// // // //   int std, division, roll;
+// // // // };
+// // // // int main() {
+// // // //   struct student st[5];
+// // // //   struct student *ptr;
+// // // //   ptr = &st[5];
+// // // //   for (int i = 0; i < 3; i++) {
+// // // //     cout << "Student " << i + 1 << endl;
+// // // //     cout << "Enter name: ";
+// // // //     cin >> st[i].name;
+// // // //     cout << "Enter std: ";
+// // // //     cin >> st[i].std;
+// // // //     cout << "Enter division: ";
+// // // //     cin >> st[i].division;
+// // // //     cout << "Enter roll number: ";
+// // // //     cin >> st[i].roll;
+// // // //   }
+// // // //   cout << "Details of Stuents" << endl;
+// // // //   for (int i = 0; i < 5; i++) {
+// // // //     cout << "Student" << i + 1 << endl;
+// // // //     cout << "Name: " << ptr->name << endl;
+// // // //     cout << "Std: " << ptr->std << endl;
+// // // //     cout << "Division: " << ptr->division << endl;
+// // // //     cout << "Roll: " << ptr->roll << endl;
+// // // //   }
+// // // // }
+// // // #include <iostream>
+// // // using namespace std;
+// // // struct student
+// // // 	{
+// // // 	char name[20];
+// // // 	int age;
+// // // 	};
+// // // int main()
+// // // 	{
+// // // 	struct student s;
+// // // 	struct student *ptr;
+// // // 	ptr=&s;
+// // // 	int i;
+// // // 	for(i=0; i<1; i++)
+// // // 		{
+// // // 		cout<<"Name: ";
+// // // 		cin>>ptr->name;
+// // // 	    cout<<"Age: ";
+// // // 		cin>>ptr->age;
+// // // 		}
+// // // 	cout<<"Display"<<endl;
+// // // 	for(i=0; i<1; i++)
+// // // 		{
+// // // 		cout<<"Name: ";
+// // // 		cout<<ptr->name<<endl;
+// // // 	    cout<<"Age: ";
+// // // 		cout<<ptr->age<<endl;
+// // // 		}
+
+// // // 	}
+// // #include<iostream>
+// // using namespace std;
+// // void incr(int n,int a[])
+// // {
+// //  for(int i=0;i<n;i++)
+// //  {
+// //  a[i]+=5;
+// //  }
+// //  cout<<"Updated Array"<<endl;
+// //  for(int i=0;i<n;i++)
+// //  {
+// //  cout<<a[i]<<" ";
+// //  }
+// // }
+// // int main()
+// // {
+// //  int n;
+// //  cout<<"Enter the length of array : "<<endl;
+// //  cin>>n;
+// //  int a[n];
+// //  cout<<"Array Elements"<<endl;
+// //  for(int i=0;i<n;i++)
+// //  {
+// //  cin>>a[i];
+// //  }
+// //  incr(n,a);
+// // }
+// #include<iostream>
+// using namespace std;
+// int main()
+// {
+//     int arr[5], i, num, index;
+//     cout<<"Enter 5 Numbers: ";
+//     for(i=0; i<5; i++){
+//         cin>>arr[i];}
+//     cout<<"\nEnter a Number to Search: ";
+//     cin>>num;
+//     for(i=0; i<10; i++)
+//     {
+//         if(arr[i]==num)
+//         {
+//             index = i;
+//             break;
+//         }
+//     }
+//     cout<<"\nFound at Index No."<<index;
+//     cout<<endl;
+//     return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int binary_search(int array[],int x,int low, int high){
+
+// }
+// #include <iostream>
+// using namespace std;
+// int binarySearch(int array[], int x, int low, int high) {
+//   while (low <= high) {
+//     int mid = low + (high - low) / 2;
+//     if (array[mid] == x)
+//       return mid;
+//     if (array[mid] < x)
+//       low = mid + 1;
+//     else
+//       high = mid - 1;
+//   }
+//   return -1;
+// }
+// int main(void) {
+//   int array[] = {3, 4, 5, 6, 7, 8, 9};
+//   int x;
+//   cout << "Number to be searched: ";
+//   cin >> x;
+//   int n = sizeof(array) / sizeof(array[0]);
+//   int result = binarySearch(array, x, 0, n - 1);
+//   if (result == -1)
+//     cout << "Not found";
+//   else
+//     cout << "Element is found at index " << result;
+// }
+//#include <iostream>
+// using namespace std;
+// int main() {
+//   int i, largest, n;
+//   int num[50];
+//   cout << "Enter no of elements";
+//   cin >> n;
+
+//   for (int i = 0; i < n; i++) {
+//     cin >> num[i];
+//   }
+//   largest = num[0];
+//   for (int i = 1; i < n; i++) {
+//     if (largest < num[i]) {
+//       largest = num[i];
+//     }
+//   }
+//   cout << largest;
+// }
+
+
+
+// #include <iostream>
+// using namespace std;
+// float volume_circle(float radius){
+//   return (4*radius*radius*radius*3.14)/3;
+// } 
+// int main(){
+//   float radius;
+//   cin>>radius;
+//   int result;
+//   result=volume_circle(radius);
+//   cout<<result;
+// }
+
+// #include <iostream>
+// using namespace std;
+// void num(int x){
+//   if(x%2==0){
+//     cout<< "even";
+//   }
+//   else{
+//     cout<< "odd";
+//   }
+
+//   }
+// int main(){
+//   int x;
+//   cin>>x;
+  
+//   num(x);
+  
+//   return 0;
+// }
+// #include <iostream>
+// using namespace std;
+
+// #include <iostream>
+// using namespace std;
+// void  fun(int x){
+//     cout<<x*2;
+// }
+
+// int main() {
+//     int T,x;
+//     cin>>T;
+//     while(T--){
+//        cin>>x;
+//        fun(x); 
+//     }
+    
+    
+// 	return 0;
+// }
+// #include <iostream>
+// using namespace std;
+// void fun(int x){
+//   if(x<=1000){
+//     cout<<"yes";
+//   }
+//   else{
+//     cout<<"no";
+//   }
+// }
+// int main(){
+//   int T;
+//   cin>>T;
+//   while(T--){
+//   int x;
+//   cin>>x;
+//   fun(x);}
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// #include <iostream>
+// #define MAX 10
+// using namespace std;
+// int stack_arr[MAX];
+// int top = -1;
+// void push(int item) {
+//   if (top == MAX) {
+//     cout << "Stack Overflow";
+//   }
+//   top = top + 1;
+//   stack_arr[top] = item;
+// }
+// int pop() {
+//   int item;
+//   if (top == -1) {
+//     cout << "Stack Underflow";
+//     exit(1);
+//   }
+//   item = stack_arr[top];
+//   top = top - 1;
+//   return item;
+// }
+// void peek() {
+//   if (top == -1) {
+//     cout << "the stack is empty"<<endl;
+//   } else {
+//     cout << "top element:" << stack_arr[top] <<endl;
+//   }
+// }
+// void display() {
+//   int i;
+//   if (top == MAX) {
+//     cout << "Stack is empty" << endl;
+//     return;
+//   }
+//   cout << "Stack elements" << endl;
+//   for (i = top; i >= 0; i--) {
+//     cout << stack_arr[i] << endl;
+//   }
+// }
+// void peep(int item) {
+//   int c = 0, e;
+//   for (int i = top; i > -1; --i) {
+//     if (stack_arr[i] == item) {
+//       e = i;
+//       c++;
+//     }
+//   }
+//   if (c == 1) {
+//     cout << "Element found at:" << e<<endl;
+//   } else {
+//     cout << "not valid"<<endl;
+//   }
+// }
+// int main() {
+//   int z, item;
+//   while (1) {
+//     cout << "1. Push" << endl;
+//     cout << "2. Pop" << endl;
+//     cout << "3. Peek" << endl;
+//     cout << "4. Peep" << endl;
+//     cout << "5. Quit" << endl;
+//     cout << "Enter your choice " << endl;
+//     cin >> z;
+//     switch (z) {
+//     case 1:
+//       cout << "Enter element to be pushed" << endl;
+//       cin >> item;
+//       push(item);
+//       display();
+//       break;
+//     case 2:
+//       item = pop();
+//       cout << "Popped item is " << item << endl;
+//       display();
+//       break;
+//     case 3:
+//       peek();
+//       break;
+//     case 4:
+//       cout << "Enter item to be peep" << endl;
+//       cin >> item;
+//       peep(item);
+//       break;
+//     case 5:
+//       exit(1);
+//     default:
+//       cout << "not valid";
+//     }
+//   }
+// }
+
+
+
+
+// Functions in Cpp
+// #include <iostream>
+// using namespace std;
+// void avg();
+// int main(){
+//   avg();
+//   }
+// void avg(){
+//   int a,b,c,d,avg;
+//   cin>>a>>b>>c;
+//   avg=(a+b+c)/3;
+//   if(avg>35){
+//     cout<<"Pass";
+//   }
+//   else{
+//     cout<<"Fail";
+//   }
+
+// }
+
+
+
+// Functions in cpp
+// #include <iostream>
+// using namespace std;
+// void avg(int a, int b, int c) {
+//   int d = (a + b + c) / 3;
+//   if (d > 35) {
+//     cout << "Pass";
+//   } else {
+//     cout << "Fail";
+//   }
+// }
+// int main() {
+//   int a, b, c;
+//   cin >> a >> b >> c;
+//   avg(a, b, c);
+// }
+
+
+
+// #include <iostream>
+// using namespace std;
+// void candy(int a,int b){
+//   int d;
+//   d=a%b;
+//   if(d==0 && d%2==0){
+//     cout<<"yes";    
+//   }
+//   else{
+//     cout<<"no";
+//   }
+// }
+// int main(){
+//   int a,b;
+//   cin>>a>>b;
+//   candy(a,b);
+// }
+
+
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//    int T,X;
+//    cin>>T;
+//    while(T--){
+//      cin>>X;  
+//      if(X<300){
+//            cout<<300<<endl;
+//        }
+//        else{
+//            cout<<X*10<<endl;
+//        }
+//    }
+// 	return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+// 	int W,X,Y,Z;
+// 	int T;
+// 	cin>>T;
+// 	while(T--){
+// 	    cin>>W>>X>>Y>>Z;
+// 	    if((W==X||W==Y||W==Z) || (W==X+Y || W==Y+Z || W==X+Z)) {
+// 	    cout<<"Yes"<<endl;
+// 	}
+// 	else{
+// 	    cout<<"no"<<endl;
+// 	}}
+// 	return 0;
+
+// }
+
+
+
+// #include <iostream>
+// using namespace std;
+// int main() {
+//     int t;
+//     cin>>t;
+//     while(t--)
+//     {
+//         int w;
+//         cin>>w;
+//         int a[3];
+//         int s1=0,s2=0,s3=0;
+//         int c=0;
+//         for(int i=0;i<3;i++)
+//         {
+//             cin>>a[i];
+//         }
+//                 s1=a[0]+a[1];
+//                 s2=a[1]+a[2];
+//                 s3=a[2]+a[0];
+//                 int s4=a[0]+a[1]+a[2];
+//          if(a[0]==w || a[1]==w || a[2]==w)
+//         {
+//             cout<<"yes"<<endl;
+//         }
+//         else if(s1==w || s2==w || s3==w || s4==w)
+//         {
+//             cout<<"yes"<<endl;
+//         }
+//         else
+//         {
+//             cout<<"no"<<endl;
+//         }
+//     }
+// 	return 0;
+// }
