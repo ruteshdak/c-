@@ -743,3 +743,166 @@
 	
 // 	return 0;
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// #include <iostream>
+// using namespace std;
+// int queue[100], n = 100, front = - 1, rear = - 1;
+// void Insert() {
+//    int val;
+//    if (rear == n - 1)
+//    cout<<"Queue Overflow"<<endl;
+//    else {
+//       if (front == - 1)
+//       front = 0;
+//       cout<<"Insert the element in queue : "<<endl;
+//       cin>>val;
+//       rear++;
+//       queue[rear] = val;
+//    }
+// }
+// void Delete() {
+//    if (front == - 1 || front > rear) {
+//       cout<<"Queue Underflow ";
+//       return ;
+//    } else {
+//       cout<<"Element deleted from queue is : "<< queue[front] <<endl;
+//       front++;;
+//    }
+// }
+// void Display() {
+//    if (front == - 1)
+//    cout<<"Queue is empty"<<endl;
+//    else {
+//       cout<<"Queue elements are : ";
+//       for (int i = front; i <= rear; i++)
+//       cout<<queue[i]<<" ";
+//          cout<<endl;
+//    }
+// }
+// int main() {
+//    int ch;
+//    cout<<"1) Insert element to queue"<<endl;
+//    cout<<"2) Delete element from queue"<<endl;
+//    cout<<"3) Display all the elements of queue"<<endl;
+//    cout<<"4) Exit"<<endl;
+//    do {
+//       cout<<"Enter your choice : "<<endl;
+//       cin>>ch;
+//       switch (ch) {
+//          case 1: Insert();
+//          break;
+//          case 2: Delete();
+//          break;
+//          case 3: Display();
+//          break;
+//          case 4: cout<<"Exit"<<endl;
+//          break;
+//          default: cout<<"Invalid choice"<<endl;
+//       }
+//    } while(ch!=4);
+//    return 0;
+// }
+
+
+// // C++ Recursive Code For Linear Search
+// #include <iostream>
+// using namespace std;
+
+// int linearsearch(int arr[], int size, int key)
+// {
+// 	if (size == 0) {
+// 		return -1;
+// 	}
+// 	if (arr[size - 1] == key) {
+// 		// Return the index of found key.
+// 		return size - 1;
+// 	}
+// 	else {
+// 		int ans = linearsearch(arr, size - 1, key);
+// 		return ans;
+// 	}
+// }
+
+// // Driver's Code
+// int main()
+// {
+// 	int arr[5] = { 5, 4, 6, 9, 15 };
+// 	int key = 15;
+
+// 	// Function call
+// 	int ans = linearsearch(arr, 5, key);
+// 	if (ans == -1) {
+// 		cout << "The element " << key << " is not found."
+// 			<< endl;
+// 	}
+// 	else {
+// 		cout << "The element " << key << " is found at "
+// 			<< ans << " index of the given array." << endl;
+// 	}
+// 	return 0;
+// }
+// // Code contributed by pragatikohli
+
+
+
+// // C++ Recursive Code For Linear Search
+// #include <iostream>
+// using namespace std;
+
+// int linearsearch(int arr[], int size, int key)
+// {
+// 	if (size == 0) {
+// 		return -1;
+// 	}
+// 	if (arr[size - 1] == key) {
+// 		// Return the index of found key.
+// 		return size - 1;
+// 	}
+// 	else {
+// 		int ans = linearsearch(arr, size - 1, key);
+// 		return ans;
+// 	}
+// }
+
+// // Driver's Code
+// int main()
+// {
+// 	int arr[5] = { 5, 15, 6, 9, 4 };
+// 	int key = 4;
+
+// 	// Function call
+// 	int ans = linearsearch(arr, 5, key);
+// 	if (ans == -1) {
+// 		cout << "The element " << key << " is not found."
+// 			<< endl;
+// 	}
+// 	else {
+// 		cout << "The element " << key << " is found at "
+// 			<< ans << " index of the given array." << endl;
+// 	}
+// 	return 0;
+// }
+// // Code contributed by pragatikohli
+
+
+
